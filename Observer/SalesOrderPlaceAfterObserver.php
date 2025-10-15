@@ -36,6 +36,7 @@ class SalesOrderPlaceAfterObserver implements ObserverInterface
         CustomerRepositoryInterface $customerRepository,
         Data $helperData
     ) {
+        $this->customerRepository = $customerRepository;
         $this->helperData = $helperData;
     }
 
