@@ -60,8 +60,7 @@ class SalesOrderPlaceAfterObserver implements ObserverInterface
         }
 
         try {
-            $order->setCustomerId($customer->getId());
-            $order->save();
+            $this->helperData->dispatchCustomerOrderLinkEvent($customer->getId(), $order->getIncrementId());
         } catch (Exception $e) {
             //do nothing
         }
