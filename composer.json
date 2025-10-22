@@ -1,5 +1,5 @@
 {
-    "name": "steverobbins/magento2-guest-to-customer",
+    "name": "magepal/magento2-guest-to-customer",
     "description": "Quickly and easily convert existing guest checkout customers to registered customers.",
     "keywords": [
         "magento 2",
